@@ -939,7 +939,7 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-\[url\(\'\.\.\/src\/assets\/images\/Profile\.png\'\)\] {
+.bg-\[url\(\'\.\.\/docs\/assets\/images\/Profile\.png\'\)\] {
   background-image: url('../docs/assets/images/Profile.png');
 }
 
