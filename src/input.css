@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.binpt {
+    @apply outline-none outline-offset-2 bg-[#1A1E23] pl-1 pb-2 border-b-[#98FAEC] border-b border-solid;
+}

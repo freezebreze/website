@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SinanTokmak</title>
+    <link rel="stylesheet" href="../dist/output.css">
+</head>
+
+<body class="bg-[#292F36] w-screen h-screen overflow-y-auto ">
+    <!-- Header -->
+    <div class="px-[1.5rem] md:px-[2rem] xl:px-[8rem] flex flex-col justify-center items-center">
+        <div class="w-full h-[4.25rem] md:h-[5rem] xl:h-[10.625rem]">
+            <div class="flex items-center justify-between w-full h-full">
+                <div
+                    class="flex  text-white  font-normal md:font-medium font-['IBM Plex Mono'] capitalize  leading-tight md:leading-loose xl:leading-[2.625rem] ">
+                    <svg class="fill-[#12F7D6] my-auto mr-2 md:w-[3.625rem] lg:w-[77px] xl:w-[77px] md:h-[2rem] lg:h-[2.625rem] xl:h-[2.625rem]"
+                        xmlns="http://www.w3.org/2000/svg" width="39" height="20" viewBox="0 0 73 30" fill="none">
+                        <path
+                            d="M0.72 16.904V13.576L14.48 5.864V9.256L3.888 15.112V15.368L14.48 21.192V24.616L0.72 16.904ZM27.4275 25.384C24.5902 25.384 22.4782 24.3813 21.0915 22.376C19.7262 20.3707 19.0435 17.5227 19.0435 13.832C19.0435 10.1413 19.7262 7.29333 21.0915 5.288C22.4782 3.28267 24.5902 2.28 27.4275 2.28C28.5155 2.28 29.4542 2.42933 30.2435 2.728C31.0542 3.00533 31.7475 3.4 32.3235 3.912C32.8995 4.40267 33.3795 4.98933 33.7635 5.672C34.1688 6.33333 34.4995 7.048 34.7555 7.816L31.5235 8.904C31.3528 8.392 31.1608 7.912 30.9475 7.464C30.7342 7.016 30.4675 6.632 30.1475 6.312C29.8275 5.992 29.4435 5.736 28.9955 5.544C28.5688 5.352 28.0355 5.256 27.3955 5.256C25.8168 5.256 24.6648 5.864 23.9395 7.08C23.2142 8.27467 22.8515 9.896 22.8515 11.944V15.72C22.8515 17.768 23.2142 19.4 23.9395 20.616C24.6648 21.8107 25.8168 22.408 27.3955 22.408C28.0355 22.408 28.5688 22.312 28.9955 22.12C29.4435 21.928 29.8275 21.672 30.1475 21.352C30.4675 21.032 30.7342 20.648 30.9475 20.2C31.1608 19.752 31.3528 19.272 31.5235 18.76L34.7555 19.848C34.4995 20.616 34.1688 21.3413 33.7635 22.024C33.3795 22.6853 32.8995 23.272 32.3235 23.784C31.7475 24.2747 31.0542 24.6693 30.2435 24.968C29.4542 25.2453 28.5155 25.384 27.4275 25.384ZM39.031 29.416L49.815 0.679998H52.919L42.135 29.416H39.031ZM58.2825 21.224L68.8745 15.368V15.112L58.2825 9.288V5.864L72.0425 13.576V16.904L58.2825 24.616V21.224Z"
+                            fill="#12F7D6" />
+                    </svg>
+                    <div class="lg:text-[32px] xl:text-[32px]">SinanTokmak</div>
+                </div>
+                <div class="flex h-[20px] xl:h-8  text-white text-base lg:text-2xl leading-tight">
+                    <nav class="">
+                        <ul class="flex">
+                            <li class="mr-4 text-[#12F7D6]"><a href="#Home">Home</a></li>
+                            <li><a href="#Blog">Blog</a></li>
+                        </ul>
+                    </nav>
+                    <div class="ml-4 sm:mx-[4rem] hidden xl:block">
+                        <form class="md:relative" action="top-nav-search-form">
+                            <label for="top-nav-search-form"></label>
+                            <input
+                                class="w-[12.75rem] rounded-[24px] text-black outline-none  pl-1 hidden xl:inline-block"
+                                type="text">
+                            <button class="md:absolute right-4 bottom-1.5" type="submit">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g id="icon-search">
+                                        <path id="Shape" fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M3.5 9.16667C3.5 6.03705 6.03705 3.5 9.16667 3.5C12.2963 3.5 14.8333 6.03705 14.8333 9.16667C14.8333 10.689 14.2331 12.0711 13.2563 13.0892C13.2256 13.1134 13.1961 13.1396 13.1678 13.1679C13.1395 13.1962 13.1133 13.2257 13.0891 13.2564C12.071 14.2331 10.6889 14.8333 9.16667 14.8333C6.03705 14.8333 3.5 12.2963 3.5 9.16667ZM13.8346 15.2489C12.5418 16.2426 10.9232 16.8333 9.16667 16.8333C4.93248 16.8333 1.5 13.4008 1.5 9.16667C1.5 4.93248 4.93248 1.5 9.16667 1.5C13.4008 1.5 16.8333 4.93248 16.8333 9.16667C16.8333 10.9233 16.2426 12.5419 15.2489 13.8347L18.207 16.7929C18.5976 17.1834 18.5976 17.8166 18.207 18.2071C17.8165 18.5976 17.1833 18.5976 16.7928 18.2071L13.8346 15.2489Z"
+                                            fill="#292F36" />
+                                    </g>
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+                    <div class="mx-4 sm:mx-[4rem] xl:hidden">
+                        <button class="" type="submit">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g id="icon-search">
+                                    <path id="Shape" fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M3.5 9.16667C3.5 6.03705 6.03705 3.5 9.16667 3.5C12.2963 3.5 14.8333 6.03705 14.8333 9.16667C14.8333 10.689 14.2331 12.0711 13.2563 13.0892C13.2256 13.1134 13.1961 13.1396 13.1678 13.1679C13.1395 13.1962 13.1133 13.2257 13.0891 13.2564C12.071 14.2331 10.6889 14.8333 9.16667 14.8333C6.03705 14.8333 3.5 12.2963 3.5 9.16667ZM13.8346 15.2489C12.5418 16.2426 10.9232 16.8333 9.16667 16.8333C4.93248 16.8333 1.5 13.4008 1.5 9.16667C1.5 4.93248 4.93248 1.5 9.16667 1.5C13.4008 1.5 16.8333 4.93248 16.8333 9.16667C16.8333 10.9233 16.2426 12.5419 15.2489 13.8347L18.207 16.7929C18.5976 17.1834 18.5976 17.8166 18.207 18.2071C17.8165 18.5976 17.1833 18.5976 16.7928 18.2071L13.8346 15.2489Z"
+                                        fill="#fff" />
+                                </g>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="hidden text-base sm:flex">
+                        <div class="flex mr-8">
+                            <svg class="fill-[#12F7D6] my-auto hidden sm:block mr-2" xmlns=" http://www.w3.org/2000/svg"
+                                width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M9.74037 7.51861C10.6739 7.03424 11.7363 6.85655 12.7766 7.01081C13.8378 7.16817 14.8202 7.66264 15.5788 8.4212C16.3373 9.17975 16.8318 10.1622 16.9891 11.2233C17.1434 12.2636 16.9657 13.3261 16.4813 14.2596C15.997 15.1931 15.2306 15.9501 14.2912 16.4229C13.3518 16.8957 12.2872 17.0603 11.2489 16.8932C10.2105 16.7261 9.25134 16.2359 8.50768 15.4923C7.76403 14.7486 7.2738 13.7894 7.10672 12.7511C6.93964 11.7128 7.10422 10.6482 7.57704 9.70878C8.04987 8.76938 8.80687 8.00299 9.74037 7.51861ZM12.4833 8.98918C11.8591 8.89662 11.2216 9.00324 10.6615 9.29386C10.1014 9.58449 9.64721 10.0443 9.36351 10.608C9.07982 11.1716 8.98107 11.8103 9.08132 12.4333C9.18157 13.0563 9.47571 13.6319 9.9219 14.0781C10.3681 14.5242 10.9436 14.8184 11.5666 14.9186C12.1896 15.0189 12.8283 14.9201 13.392 14.6364C13.9556 14.3527 14.4155 13.8985 14.7061 13.3384C14.9967 12.7783 15.1033 12.1409 15.0108 11.5167C14.9164 10.88 14.6197 10.2905 14.1645 9.83541C13.7094 9.38028 13.12 9.08359 12.4833 8.98918Z"
+                                    fill="#12F7D6" />
+                                <path
+                                    d="M17.5 5.5C16.9477 5.5 16.5 5.94772 16.5 6.5C16.5 7.05228 16.9477 7.5 17.5 7.5H17.51C18.0623 7.5 18.51 7.05228 18.51 6.5C18.51 5.94772 18.0623 5.5 17.51 5.5H17.5Z"
+                                    fill="#12F7D6" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M1 7C1 3.68629 3.68629 1 7 1H17C20.3137 1 23 3.68629 23 7V17C23 20.3137 20.3137 23 17 23H7C3.68629 23 1 20.3137 1 17V7ZM7 3C4.79086 3 3 4.79086 3 7V17C3 19.2091 4.79086 21 7 21H17C19.2091 21 21 19.2091 21 17V7C21 4.79086 19.2091 3 17 3H7Z"
+                                    fill="#12F7D6" />
+                            </svg>
+                            <div
+                                class="text-white  font-normal font-['IBM Plex Mono'] capitalize hidden 2xl:block xl:leading-8">
+                                <a href="">instagram</a>
+                            </div>
+                        </div>
+                        <div class="flex mr-8">
+                            <svg class=" fill-[#12F7D6] my-auto hidden sm:block mr-2"
+                                xmlns=" http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 22 18"
+                                fill="none">
+                                <path
+                                    d="M8.49219 0.679688L7.90625 0.75C7.90625 0.75 5.27832 1.03711 3.35938 2.57812H3.33594L3.3125 2.60156C2.88184 2.99707 2.69434 3.4834 2.39844 4.19531C2.10254 4.90723 1.78613 5.81543 1.50781 6.82031C0.951172 8.83301 0.5 11.2705 0.5 13.5V13.6875L0.59375 13.875C1.28809 15.0938 2.52148 15.8701 3.66406 16.4062C4.80664 16.9424 5.79395 17.2266 6.47656 17.25L6.92188 17.2734L7.15625 16.875L7.97656 15.4219C8.84668 15.6182 9.84863 15.75 11 15.75C12.1514 15.75 13.1533 15.6182 14.0234 15.4219L14.8438 16.875L15.0781 17.2734L15.5234 17.25C16.2061 17.2266 17.1934 16.9424 18.3359 16.4062C19.4785 15.8701 20.7119 15.0938 21.4062 13.875L21.5 13.6875V13.5C21.5 11.2705 21.0488 8.83301 20.4922 6.82031C20.2139 5.81543 19.8975 4.90723 19.6016 4.19531C19.3057 3.4834 19.1182 2.99707 18.6875 2.60156L18.6641 2.57812H18.6406C16.7217 1.03711 14.0938 0.75 14.0938 0.75L13.5078 0.679688L13.2969 1.21875C13.2969 1.21875 13.0801 1.7666 12.9453 2.39062C12.0957 2.27637 11.4014 2.25 11 2.25C10.5986 2.25 9.9043 2.27637 9.05469 2.39062C8.91992 1.7666 8.70312 1.21875 8.70312 1.21875L8.49219 0.679688ZM7.46094 2.39062C7.49316 2.49609 7.52539 2.58691 7.55469 2.67188C6.58496 2.91211 5.55078 3.27832 4.60156 3.86719L5.39844 5.13281C7.34375 3.92578 10.1387 3.75 11 3.75C11.8613 3.75 14.6562 3.92578 16.6016 5.13281L17.3984 3.86719C16.4492 3.27832 15.415 2.91211 14.4453 2.67188C14.4746 2.58691 14.5068 2.49609 14.5391 2.39062C15.2393 2.53125 16.5752 2.85352 17.6797 3.72656C17.6738 3.72949 17.9609 4.16309 18.2188 4.78125C18.4824 5.41699 18.7754 6.26367 19.0391 7.21875C19.5459 9.0498 19.9443 11.2793 19.9766 13.2422C19.5049 13.9629 18.6289 14.6133 17.7031 15.0469C16.8945 15.4248 16.2559 15.5625 15.875 15.6328L15.5 15C15.7227 14.918 15.9424 14.8271 16.1328 14.7422C17.2871 14.2354 17.9141 13.6875 17.9141 13.6875L16.9297 12.5625C16.9297 12.5625 16.5078 12.9492 15.5234 13.3828C14.5391 13.8164 13.0361 14.25 11 14.25C8.96387 14.25 7.46094 13.8164 6.47656 13.3828C5.49219 12.9492 5.07031 12.5625 5.07031 12.5625L4.08594 13.6875C4.08594 13.6875 4.71289 14.2354 5.86719 14.7422C6.05762 14.8271 6.27734 14.918 6.5 15L6.125 15.6328C5.74414 15.5625 5.10547 15.4248 4.29688 15.0469C3.37109 14.6133 2.49512 13.9629 2.02344 13.2422C2.05566 11.2793 2.4541 9.0498 2.96094 7.21875C3.22461 6.26367 3.51758 5.41699 3.78125 4.78125C4.03906 4.16309 4.32617 3.72949 4.32031 3.72656C5.4248 2.85352 6.76074 2.53125 7.46094 2.39062ZM8.375 7.5C7.79492 7.5 7.28223 7.83105 6.96875 8.25C6.65527 8.66895 6.5 9.18457 6.5 9.75C6.5 10.3154 6.65527 10.8311 6.96875 11.25C7.28223 11.6689 7.79492 12 8.375 12C8.95508 12 9.46777 11.6689 9.78125 11.25C10.0947 10.8311 10.25 10.3154 10.25 9.75C10.25 9.18457 10.0947 8.66895 9.78125 8.25C9.46777 7.83105 8.95508 7.5 8.375 7.5ZM13.625 7.5C13.0449 7.5 12.5322 7.83105 12.2188 8.25C11.9053 8.66895 11.75 9.18457 11.75 9.75C11.75 10.3154 11.9053 10.8311 12.2188 11.25C12.5322 11.6689 13.0449 12 13.625 12C14.2051 12 14.7178 11.6689 15.0312 11.25C15.3447 10.8311 15.5 10.3154 15.5 9.75C15.5 9.18457 15.3447 8.66895 15.0312 8.25C14.7178 7.83105 14.2051 7.5 13.625 7.5ZM8.375 9C8.41602 9 8.46875 9.01465 8.5625 9.14062C8.65625 9.2666 8.75 9.48633 8.75 9.75C8.75 10.0137 8.65625 10.2334 8.5625 10.3594C8.46875 10.4854 8.41602 10.5 8.375 10.5C8.33398 10.5 8.28125 10.4854 8.1875 10.3594C8.09375 10.2334 8 10.0137 8 9.75C8 9.48633 8.09375 9.2666 8.1875 9.14062C8.28125 9.01465 8.33398 9 8.375 9ZM13.625 9C13.666 9 13.7188 9.01465 13.8125 9.14062C13.9062 9.2666 14 9.48633 14 9.75C14 10.0137 13.9062 10.2334 13.8125 10.3594C13.7188 10.4854 13.666 10.5 13.625 10.5C13.584 10.5 13.5312 10.4854 13.4375 10.3594C13.3438 10.2334 13.25 10.0137 13.25 9.75C13.25 9.48633 13.3438 9.2666 13.4375 9.14062C13.5312 9.01465 13.584 9 13.625 9Z"
+                                    fill="#12F7D6" />
+                            </svg>
+                            <div
+                                class="text-white  font-normal font-['IBM Plex Mono'] capitalize hidden 2xl:block xl:leading-8">
+                                <a href="">Discord</a>
+                            </div>
+                        </div>
+                        <div class="flex ">
+                            <svg class=" fill-[#12F7D6] my-auto hidden sm:block mr-2" xmlns="http://www.w3.org/2000/svg"
+                                width="20" height="20" viewBox="0 0 24 24" fill="#12F7D6">
+                                <path
+                                    d="M12 2.24658C9.62547 2.24668 7.32846 3.0917 5.51996 4.63043C3.71146 6.16916 2.5095 8.3012 2.12913 10.6451C1.74876 12.9889 2.21481 15.3917 3.4439 17.4233C4.67298 19.455 6.58488 20.9831 8.83752 21.7341C9.33752 21.8216 9.52502 21.5216 9.52502 21.2591C9.52502 21.0216 9.51251 20.2341 9.51251 19.3966C7 19.8591 6.35 18.7841 6.15 18.2216C5.92807 17.6745 5.57627 17.1897 5.125 16.8091C4.775 16.6216 4.275 16.1591 5.11249 16.1466C5.43227 16.1813 5.73898 16.2926 6.00663 16.471C6.27427 16.6494 6.49496 16.8897 6.65 17.1716C6.78677 17.4173 6.97068 17.6336 7.19119 17.8081C7.4117 17.9826 7.66447 18.1118 7.93503 18.1885C8.20559 18.2651 8.48861 18.2876 8.76788 18.2547C9.04714 18.2218 9.31717 18.134 9.56248 17.9966C9.60577 17.4882 9.83234 17.0129 10.2 16.6591C7.975 16.4091 5.65 15.5466 5.65 11.7216C5.63594 10.7278 6.00268 9.76619 6.675 9.03411C6.36928 8.17033 6.40505 7.2224 6.775 6.38411C6.775 6.38411 7.61247 6.1216 9.525 7.40911C11.1613 6.95909 12.8887 6.95909 14.525 7.40911C16.4375 6.10911 17.275 6.38411 17.275 6.38411C17.645 7.22238 17.6808 8.17034 17.375 9.03411C18.0493 9.76494 18.4164 10.7273 18.4 11.7216C18.4 15.5591 16.0625 16.4091 13.8375 16.6591C14.0761 16.901 14.2599 17.1914 14.3764 17.5106C14.4929 17.8298 14.5393 18.1704 14.5125 18.5091C14.5125 19.8466 14.5 20.9216 14.5 21.2591C14.5 21.5216 14.6875 21.8341 15.1875 21.7341C17.4362 20.977 19.3426 19.4453 20.5664 17.4126C21.7903 15.3799 22.2519 12.9784 21.8689 10.6368C21.4859 8.29523 20.2832 6.16595 18.4755 4.62909C16.6678 3.09223 14.3727 2.24782 12 2.24658Z"
+                                    fill="#12F7D6" />
+                            </svg>
+                            <div
+                                class="text-white  font-normal font-['IBM Plex Mono']  capitalize hidden 2xl:block xl:leading-8">
+                                <a href="">Github</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="w-full h-[0px] justify-center items-center inline-flex">
+            <div class="grow shrink basis-0 h-[0px] border border-zinc-700"></div>
+        </div>
+    </div>
+    <!-- Hero -->
+    <div class="flex flex-col lg:flex-grow items-center justify-center py-16 md:px-[128px]">
+        <!-- 头像 info -->
+        <div
+            class="p-[24px] xl:flex-grow flex flex-col h-[520px] w-[320px] max-w-full  items-start justify-center 
+            mb-16  rounded-tl-[160px] rounded-br-[160px] border-4 border-solid border-white shadow-[-4px_-4px_2px_0px_#12F7D6]">
+            <div class="flex flex-col items-center justify-center w-full mb-8">
+                <div
+                    class="rounded-[64px] w-[96px] h-[96px] object-cover border-[3px] border-[#12F7D6] bg-[url('../src/assets/images/Profile.png')] bg-no-repeat  bg-[lightgray] bg-cover bg-center">
+                </div>
+                <div class="flex flex-col items-center justify-center mt-4">
+                    <div class="text-white text-[32px] font-medium font-['IBM Plex Mono'] capitalize leading-[42px]">
+                        Ruan</div>
+                    <div class="text-white text-sm font-normal font-['IBM Plex Mono'] leading-[18px] ">
+                        Full-stack
+                        developer</div>
+                </div>
+            </div>
+            <div
+                class="flex flex-wrap mb-8 items-center justify-start text-white text-sm font-normal font-['IBM Plex Mono']">
+                <div class="flex items-center justify-center mb-4">
+                    <svg class="mr-4" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14"
+                        fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M0.583575 3.48988C0.58348 3.49564 0.583471 3.50139 0.583546 3.50715V10.5C0.583546 11.4638 1.36971 12.25 2.33355 12.25H11.6669C12.6307 12.25 13.4169 11.4638 13.4169 10.5V3.50721C13.417 3.50141 13.4169 3.4956 13.4169 3.4898C13.4113 2.53063 12.6273 1.75 11.6669 1.75H2.33355C1.37309 1.75 0.589053 2.53067 0.583575 3.48988ZM1.81238 3.2398C1.90885 3.04904 2.10724 2.91667 2.33355 2.91667H11.6669C11.8932 2.91667 12.0916 3.04904 12.188 3.2398L7.00021 6.87128L1.81238 3.2398ZM12.2502 4.62038V10.5C12.2502 10.8195 11.9864 11.0833 11.6669 11.0833H2.33355C2.01405 11.0833 1.75021 10.8195 1.75021 10.5V4.62038L6.66569 8.06122C6.86655 8.20182 7.13388 8.20182 7.33473 8.06122L12.2502 4.62038Z"
+                            fill="#12F7D6" />
+                    </svg>
+                    <div>abdurrahman_sinan@hotmail.com</div>
+                </div>
+                <div class="flex items-center justify-around mb-4">
+                    <svg class="mr-4" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14"
+                        fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M6.99984 3.5C5.71117 3.5 4.6665 4.54467 4.6665 5.83333C4.6665 7.122 5.71117 8.16667 6.99984 8.16667C8.2885 8.16667 9.33317 7.122 9.33317 5.83333C9.33317 4.54467 8.2885 3.5 6.99984 3.5ZM5.83317 5.83333C5.83317 5.189 6.3555 4.66667 6.99984 4.66667C7.64417 4.66667 8.1665 5.189 8.1665 5.83333C8.1665 6.47767 7.64417 7 6.99984 7C6.3555 7 5.83317 6.47767 5.83317 5.83333Z"
+                            fill="#12F7D6" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M6.67595 13.9018C6.67611 13.9019 6.67626 13.902 6.99984 13.4167L6.67595 13.9018C6.87189 14.0324 7.12747 14.0327 7.32341 13.902L6.99984 13.4167C7.32341 13.902 7.32324 13.9021 7.32341 13.902L7.3254 13.9007L7.32928 13.8981L7.34265 13.8891C7.35401 13.8813 7.37021 13.8703 7.39093 13.8559C7.43236 13.8272 7.4919 13.7854 7.56696 13.7312C7.71702 13.6228 7.92946 13.4646 8.18352 13.2623C8.69073 12.8584 9.36853 12.275 10.0483 11.5574C11.384 10.1475 12.8332 8.10947 12.8332 5.83333C12.8332 4.28624 12.2186 2.80251 11.1246 1.70854C10.0307 0.614581 8.54693 0 6.99984 0C5.45274 0 3.96901 0.614581 2.87505 1.70854C1.78109 2.80251 1.1665 4.28624 1.1665 5.83333C1.1665 8.10947 2.61566 10.1475 3.95136 11.5574C4.63115 12.275 5.30895 12.8584 5.81615 13.2623C6.07021 13.4646 6.28266 13.6228 6.43272 13.7312C6.50777 13.7854 6.56731 13.8272 6.60875 13.8559C6.62946 13.8703 6.64566 13.8813 6.65702 13.8891L6.67039 13.8981L6.67428 13.9007L6.67595 13.9018ZM3.70001 2.5335C4.57517 1.65833 5.76216 1.16667 6.99984 1.16667C8.23751 1.16667 9.4245 1.65833 10.2997 2.5335C11.1748 3.40867 11.6665 4.59566 11.6665 5.83333C11.6665 7.64053 10.4907 9.39415 9.20136 10.7551C8.56865 11.4229 7.93395 11.9697 7.45678 12.3497C7.27919 12.4911 7.12407 12.6089 6.99984 12.7007C6.8756 12.6089 6.72049 12.4911 6.5429 12.3497C6.06573 11.9697 5.43103 11.4229 4.79831 10.7551C3.50902 9.39415 2.33317 7.64053 2.33317 5.83333C2.33317 4.59566 2.82484 3.40867 3.70001 2.5335Z"
+                            fill="#12F7D6" />
+                    </svg>
+                    <div>Shen Zhen</div>
+                </div>
+                <div class="flex items-center justify-center mb-4">
+                    <svg class="mr-4" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14"
+                        fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M5.8335 1.16666C5.36937 1.16666 4.92425 1.35103 4.59606 1.67922C4.26787 2.00741 4.0835 2.45253 4.0835 2.91666V3.49999H2.3335C1.367 3.49999 0.583496 4.28349 0.583496 5.24999V11.0833C0.583496 12.0498 1.367 12.8333 2.3335 12.8333H11.6668C12.6333 12.8333 13.4168 12.0498 13.4168 11.0833V5.24999C13.4168 4.28349 12.6333 3.49999 11.6668 3.49999H9.91683V2.91666C9.91683 2.45253 9.73246 2.00741 9.40427 1.67922C9.07608 1.35103 8.63096 1.16666 8.16683 1.16666H5.8335ZM8.75016 3.49999V2.91666C8.75016 2.76195 8.68871 2.61357 8.57931 2.50418C8.46991 2.39478 8.32154 2.33332 8.16683 2.33332H5.8335C5.67879 2.33332 5.53041 2.39478 5.42102 2.50418C5.31162 2.61357 5.25016 2.76195 5.25016 2.91666V3.49999H8.75016ZM5.25016 4.66666H8.75016V11.6667H5.25016V4.66666ZM4.0835 4.66666H2.3335C2.01133 4.66666 1.75016 4.92782 1.75016 5.24999V11.0833C1.75016 11.4055 2.01133 11.6667 2.3335 11.6667H4.0835V4.66666ZM9.91683 11.6667V4.66666H11.6668C11.989 4.66666 12.2502 4.92782 12.2502 5.24999V11.0833C12.2502 11.4055 11.989 11.6667 11.6668 11.6667H9.91683Z"
+                            fill="#12F7D6" />
+                    </svg>
+                    <div>Full-time / Freelancer</div>
+                </div>
+                <div class="flex items-center justify-center mb-4">
+                    <svg class="mr-4" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14"
+                        fill="none">
+                        <g clip-path="url(#clip0_621_2499)">
+                            <path
+                                d="M9.91414 0.622233C8.99645 0.614259 8.11234 0.967039 7.45223 1.60459L7.44621 1.6105L6.44287 2.608C6.2144 2.83514 6.21333 3.20448 6.44047 3.43295C6.66761 3.66142 7.03695 3.6625 7.26542 3.43536L8.2656 2.44099C8.70537 2.0177 9.29354 1.78355 9.904 1.78886C10.5158 1.79417 11.101 2.03957 11.5336 2.47219C11.9663 2.9048 12.2117 3.49003 12.217 4.10183C12.2223 4.71202 11.9883 5.29995 11.5654 5.73965L9.81917 7.48587C9.58262 7.7225 9.29788 7.90556 8.98439 8.0225C8.6709 8.13944 8.33593 8.1876 8.0022 8.1637C7.66846 8.13979 7.34377 8.0444 7.05015 7.88398C6.75653 7.72356 6.50084 7.50187 6.30043 7.23394C6.10746 6.97596 5.74189 6.92326 5.48391 7.11623C5.22593 7.3092 5.17323 7.67477 5.3662 7.93275C5.66682 8.33464 6.05035 8.66718 6.49079 8.90781C6.93122 9.14844 7.41826 9.29153 7.91886 9.32738C8.41946 9.36323 8.92191 9.29101 9.39214 9.11559C9.86237 8.94019 10.2894 8.6657 10.6442 8.31075L12.3941 6.56082L12.4012 6.55359C13.0388 5.89349 13.3916 5.00938 13.3836 4.09169C13.3756 3.174 13.0075 2.29616 12.3586 1.64723C11.7097 0.998299 10.8318 0.630208 9.91414 0.622233Z"
+                                fill="#12F7D6" />
+                            <path
+                                d="M6.08108 4.67264C5.58048 4.63678 5.07802 4.70901 4.60779 4.88442C4.13759 5.05982 3.71061 5.33428 3.35581 5.68919L1.60581 7.43919L1.5987 7.44642C0.961149 8.10653 0.608369 8.99064 0.616343 9.90833C0.624318 10.826 0.992409 11.7039 1.64134 12.3528C2.29027 13.0017 3.16811 13.3698 4.0858 13.3778C5.00349 13.3858 5.88759 13.033 6.5477 12.3954L6.55493 12.3883L7.55243 11.3908C7.78024 11.163 7.78024 10.7937 7.55243 10.5659C7.32463 10.3381 6.95528 10.3381 6.72748 10.5659L5.73375 11.5596C5.29405 11.9825 4.70613 12.2165 4.09594 12.2112C3.48414 12.2058 2.89891 11.9605 2.4663 11.5278C2.03368 11.0952 1.78828 10.51 1.78297 9.89819C1.77766 9.288 2.01161 8.70007 2.43455 8.26037L4.18077 6.51415C4.41731 6.27752 4.70206 6.09445 5.01555 5.97751C5.32903 5.86057 5.664 5.81242 5.99774 5.83632C6.33147 5.86022 6.65616 5.95562 6.94978 6.11604C7.24341 6.27646 7.4991 6.49815 7.69951 6.76608C7.89248 7.02406 8.25805 7.07676 8.51603 6.88379C8.774 6.69082 8.8267 6.32525 8.63373 6.06727C8.33312 5.66538 7.94958 5.33284 7.50915 5.09221C7.06871 4.85158 6.58168 4.70849 6.08108 4.67264Z"
+                                fill="#12F7D6" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_621_2499">
+                                <rect width="14" height="14" fill="white" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                    <div>github.com/freezebreze</div>
+                </div>
+                <div class="flex gap-4 text-gray-800 text-sm font-normal font-['IBM Plex Mono']">
+                    <div class="px-2 bg-[#12F7D6] rounded-lg justify-center items-center gap-4 inline-flex">
+                        <div>HTML
+                        </div>
+                    </div>
+                    <div class="px-2 bg-[#12F7D6] rounded-lg justify-center items-center gap-4 inline-flex">
+                        <div>CSS
+                        </div>
+                    </div>
+                    <div class="px-2 bg-[#12F7D6] rounded-lg justify-center items-center gap-4 inline-flex">
+                        <div>JS
+                        </div>
+                    </div>
+                    <div class="px-2 bg-[#12F7D6] rounded-lg justify-center items-center gap-4 inline-flex">
+                        <div>REACT
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="px-8 py-4  bg-white rounded-[32px] inline-flex justify-center items-center">
+                <div
+                    class="text-[#292F36] font-['Ubuntu'] capitalize text-[20px] leading-[24px] font-normal not-italic">
+                    Download CV</div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path
+                        d="M13 3C13 2.44772 12.5523 2 12 2C11.4477 2 11 2.44772 11 3V12.5858L7.70711 9.29289C7.31658 8.90237 6.68342 8.90237 6.29289 9.29289C5.90237 9.68342 5.90237 10.3166 6.29289 10.7071L11.2929 15.7071C11.6834 16.0976 12.3166 16.0976 12.7071 15.7071L17.7071 10.7071C18.0976 10.3166 18.0976 9.68342 17.7071 9.29289C17.3166 8.90237 16.6834 8.90237 16.2929 9.29289L13 12.5858V3Z"
+                        fill="#292F36" />
+                    <path
+                        d="M3 14C3.55228 14 4 14.4477 4 15V19C4 19.2652 4.10536 19.5196 4.29289 19.7071C4.48043 19.8946 4.73478 20 5 20H19C19.2652 20 19.5196 19.8946 19.7071 19.7071C19.8946 19.5196 20 19.2652 20 19V15C20 14.4477 20.4477 14 21 14C21.5523 14 22 14.4477 22 15V19C22 19.7957 21.6839 20.5587 21.1213 21.1213C20.5587 21.6839 19.7957 22 19 22H5C4.20435 22 3.44129 21.6839 2.87868 21.1213C2.31607 20.5587 2 19.7957 2 19V15C2 14.4477 2.44772 14 3 14Z"
+                        fill="#292F36" />
+                </svg>
+            </div>
+        </div>
+        <!-- 介绍 -->
+        <div
+            class="flex flex-wrap xl:flex-grow-0 items-center justify-center mt-[64px] w-[328px] md:w-[648px] xl:w-[697px] 2xl:w-[745px] md:px-[24px]">
+            <div class="flex flex-col items-center justify-center">
+                <div
+                    class="leading-[18px] font-normal not-italic text-[#98FAEC] text-[14px] font-['IBM Plex Mono']  mr-auto">
+                    <div>&lt;h1&gt;</div>
+                </div>
+                <div
+                    class="flex w-full flex-wrap items-start justify-center px-4 text-[30px] text-white  font-normal font-['Ubuntu'] leading-9 md:leading-[72px] md:text-[58px]">
+                    <div class="basis-full">Hey</div>
+                    <div class="basis-full">I'm <span class="text-[#12F7D6]">Sinan</span>,
+                    </div>
+                    <div class="flex basis-full">Full-stack developer</div>
+                </div>
+                <div
+                    class="mb-[32px] leading-[18px] font-normal not-italic text-[#98FAEC] text-[14px] font-['IBM Plex Mono'] mr-auto">
+                    &lt;/h1&gt;
+                </div>
+                <div class="flex flex-col items-start justify-center md:w-full">
+                    <div
+                        class="leading-[18px] mb-4 font-normal not-italic text-[#98FAEC] text-[14px] font-['IBM Plex Mono'] mr-auto">
+                        <div>&lt;p&gt;</div>
+                    </div>
+                    <div
+                        class="w-full px-[24px] mb-4 text-white text-[16px] not-italic font-normal font-['IBM Plex Mono'] leading-[20px]">
+                        <div class="w-[280px] md:w-full">
+                            I
+                            help
+                            business grow by crafting amazing web experiences. If you’re looking for a developer that
+                            likes
+                            to
+                            get stuff done,</div>
+                    </div>
+                    <div
+                        class="leading-[18px] mb-4 font-normal not-italic text-[#98FAEC] text-[14px] font-['IBM Plex Mono'] mr-auto">
+                        &lt;/p&gt;
+                    </div>
+                    <div class="flex items-center justify-center pl-[24px]">
+                        <div
+                            class="text-[#12F7D6] text-[32px] font-medium font-['IBM Plex Mono'] capitalize leading-[42px] mr-4">
+                            let’s talk</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M1.00014 5.98266C0.999973 5.99253 0.999957 6.00239 1.00009 6.01225V18C1.00009 19.6523 2.3478 21 4.00009 21H20.0001C21.6524 21 23.0001 19.6523 23.0001 18V6.01236C23.0002 6.00242 23.0002 5.99247 23 5.98251C22.9906 4.33822 21.6465 3 20.0001 3H4.00009C2.35359 3 1.00953 4.3383 1.00014 5.98266ZM3.10666 5.55395C3.27204 5.22692 3.61212 5 4.00009 5H20.0001C20.3881 5 20.7281 5.22692 20.8935 5.55395L12.0001 11.7793L3.10666 5.55395ZM21.0001 7.92066V18C21.0001 18.5477 20.5478 19 20.0001 19H4.00009C3.45237 19 3.00009 18.5477 3.00009 18V7.92066L11.4266 13.8192C11.7709 14.0603 12.2292 14.0603 12.5735 13.8192L21.0001 7.92066Z"
+                                fill="#12F7D6" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <div
+                class="flex flex-col mt-16 justify-center items-start px-8 py-[48px] bg-[#1A1E23] rounded-[80px] shadow">
+                <div class="inline-flex items-center justify-center mb-[4rem]">
+                    <div
+                        class="text-[#12F7D6] text-5xl font-medium font-['IBM Plex Mono'] capitalize leading-[62px] mr-4">
+                        4
+                    </div>
+                    <div class="flex flex-col items-start justify-center">
+                        <div class="text-white text-base font-normal font-['IBM Plex Mono'] leading-tight">
+                            Programming
+                        </div>
+                        <div class="text-white text-base font-normal font-['IBM Plex Mono'] leading-tight">
+                            Language
+                        </div>
+                    </div>
+                </div>
+                <div class="inline-flex items-center justify-center mb-[4rem]">
+                    <div
+                        class="text-[#12F7D6] text-5xl font-medium font-['IBM Plex Mono'] capitalize leading-[62px] mr-4">
+                        6
+                    </div>
+                    <div class="flex flex-col items-start justify-center">
+                        <div class="text-white text-base font-normal font-['IBM Plex Mono'] leading-tight">
+                            Development
+                        </div>
+                        <div class="text-white text-base font-normal font-['IBM Plex Mono'] leading-tight">
+                            Tools
+                        </div>
+                    </div>
+                </div>
+                <div class="inline-flex items-center justify-center">
+                    <div
+                        class="text-[#12F7D6] text-5xl font-medium font-['IBM Plex Mono'] capitalize leading-[62px] mr-4">
+                        8
+                    </div>
+                    <div class="flex flex-col items-start justify-center">
+                        <div class="text-white text-base font-normal font-['IBM Plex Mono'] leading-tight">
+                            Years of
+                        </div>
+                        <div class="text-white text-base font-normal font-['IBM Plex Mono'] leading-tight">
+                            Experience
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Blogs -->
+    <!-- Contact -->
+    <div class="pt-[4rem] pb-[2rem] px-[24px] md:py-[32px] md:px-[24px]  bg-[#1A1E23] w-full">
+        <div class="flex flex-col items-center content-center justify-center">
+            <div class="text-[#12F7D6] text-[64px] font-normal font-['Ubuntu'] capitalize leading-[72px] mb-[16px]">
+                Contact
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="240" height="12" viewBox="0 0 240 12" fill="none">
+                <path
+                    d="M0.666667 6C0.666667 8.94552 3.05448 11.3333 6 11.3333C8.94552 11.3333 11.3333 8.94552 11.3333 6C11.3333 3.05448 8.94552 0.666667 6 0.666667C3.05448 0.666667 0.666667 3.05448 0.666667 6ZM228.667 6C228.667 8.94552 231.054 11.3333 234 11.3333C236.946 11.3333 239.333 8.94552 239.333 6C239.333 3.05448 236.946 0.666667 234 0.666667C231.054 0.666667 228.667 3.05448 228.667 6ZM6 7H234V5H6V7Z"
+                    fill="#12F7D6" />
+            </svg>
+            <div
+                class="w-full mt-4 text-center text-white text-[16px] font-normal font-['IBM Plex Mono'] leading-[20px]">
+                I’m
+                currently
+                available for freelance work</div>
+            <div class="flex flex-col items-center justify-center my-[64px]">
+                <div
+                    class="h-16 px-[40px] py-[16px]  rounded-tl-[32px] mb-[64px] rounded-br-[32px] border-2 border-[#12F7D6] flex-col justify-center items-center inline-flex">
+                    <div
+                        class=" text-[#12F7D6] text-2xl md:text-[32px] md:font-medium md:leading-[42px] font-normal font-['IBM Plex Mono'] capitalize leading-loose">
+                        Send me a message
+                    </div>
+                </div>
+                <div class="flex flex-wrap items-center justify-center gap-6 md:gap-16">
+                    <div class="flex flex-col items-center justify-center ">
+                        <div class="flex flex-col items-start justify-center gap-6">
+                            <div class="text-[#12F7D6] text-base font-light font-['Ubuntu'] leading-[18px]">
+                                Your
+                                name *</div>
+                            <input type="text" class="text-white binpt w-[135px]" placeholder="Enter your name">
+                        </div>
+                    </div>
+                    <div class="flex flex-col items-center justify-center">
+                        <div class="flex flex-col items-start justify-center gap-6">
+                            <div class=" text-[#12F7D6] text-base font-light font-['Ubuntu'] leading-[18px]">
+                                Your
+                                email *</div>
+                            <input type="text" class="text-white binpt w-[135px]" placeholder="Enter your email">
+                        </div>
+                    </div>
+                    <div class="flex flex-col items-center justify-center flex-grow basis-full">
+                        <div class="flex flex-col items-start justify-center gap-6">
+                            <div class=" text-[#12F7D6] text-base font-light font-['Ubuntu'] leading-[18px]">
+                                Your message *</div>
+                            <input type="text" class="text-white binpt w-[294px]" placeholder="Enter your needs">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="inline-flex bg-[#12F7D6] text-[#292F36] justify-center items-center  py-[1rem] px-[2rem] rounded-[2rem] mb-[4rem]">
+                <span class="text-xl font-normal font-['Ubuntu'] capitalize leading-normal">Send Message</span>
+                <svg class="ml-[1rem]" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                    fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M22.7071 1.29292C22.9306 1.5164 23.0262 1.81935 22.9939 2.11081C22.9848 2.19252 22.9657 2.27332 22.9366 2.35121L15.9439 22.3304C15.8084 22.7174 15.4504 22.9825 15.0408 22.9992C14.6311 23.0159 14.2527 22.7808 14.0862 22.4062L10.2424 13.7576L1.59387 9.91384C1.21919 9.74731 0.984122 9.36894 1.00084 8.95926C1.01755 8.54959 1.28265 8.19162 1.66965 8.05617L21.6488 1.06348C21.7272 1.03414 21.8085 1.01497 21.8907 1.00598C21.9511 0.999338 22.0117 0.998262 22.0717 1.00259C22.3032 1.01913 22.5301 1.11591 22.7071 1.29292ZM18.1943 4.3915L4.71108 9.11063L10.7785 11.8073L18.1943 4.3915ZM12.1928 13.2215L19.6085 5.80571L14.8894 19.289L12.1928 13.2215Z"
+                        fill="#292F36" />
+                </svg>
+            </div>
+            <div
+                class="pt-[24px] gap-6 px-[24px] flex flex-wrap items-center justify-center text-center text-white text-base font-light font-['Ubuntu'] leading-[18px]">
+                <div class="flex items-center justify-center gap-8 basis-full">
+                    <div class="p-2 bg-[#98FAEC] rounded-[48px]">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g id="icon-instagram" clip-path="url(#clip0_610_2517)">
+                                <g id="Shape">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M6.49341 5.01225C7.11575 4.68933 7.82405 4.57087 8.51759 4.67371C9.22503 4.77862 9.87997 5.10826 10.3857 5.61397C10.8914 6.11967 11.221 6.77461 11.3259 7.48205C11.4288 8.17558 11.3103 8.88389 10.9874 9.50622C10.6645 10.1286 10.1535 10.6332 9.52728 10.9484C8.90102 11.2637 8.1913 11.3734 7.49908 11.262C6.80686 11.1506 6.16739 10.8238 5.67163 10.328C5.17586 9.83224 4.84904 9.19277 4.73765 8.50056C4.62626 7.80834 4.73598 7.09862 5.0512 6.47236C5.36642 5.84609 5.87108 5.33516 6.49341 5.01225ZM8.32202 5.99262C7.90589 5.93092 7.48091 6.00199 7.10751 6.19574C6.73411 6.38949 6.43131 6.69605 6.24218 7.07181C6.05305 7.44757 5.98722 7.8734 6.05405 8.28873C6.12088 8.70406 6.31697 9.08774 6.61443 9.3852C6.9119 9.68266 7.29558 9.87876 7.71091 9.94559C8.12624 10.0124 8.55207 9.94659 8.92783 9.75746C9.30359 9.56833 9.61014 9.26553 9.80389 8.89213C9.99764 8.51873 10.0687 8.09375 10.007 7.67762C9.94407 7.25316 9.74628 6.8602 9.44286 6.55678C9.13944 6.25336 8.74648 6.05557 8.32202 5.99262Z"
+                                        fill="#292F36" />
+                                    <path
+                                        d="M11.6665 3.6665C11.2983 3.6665 10.9998 3.96498 10.9998 4.33317C10.9998 4.70136 11.2983 4.99984 11.6665 4.99984H11.6732C12.0414 4.99984 12.3398 4.70136 12.3398 4.33317C12.3398 3.96498 12.0414 3.6665 11.6732 3.6665H11.6665Z"
+                                        fill="#292F36" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M0.666504 4.6665C0.666504 2.45736 2.45736 0.666504 4.6665 0.666504H11.3332C13.5423 0.666504 15.3332 2.45736 15.3332 4.6665V11.3332C15.3332 13.5423 13.5423 15.3332 11.3332 15.3332H4.6665C2.45736 15.3332 0.666504 13.5423 0.666504 11.3332V4.6665ZM4.6665 1.99984C3.19374 1.99984 1.99984 3.19374 1.99984 4.6665V11.3332C1.99984 12.8059 3.19374 13.9998 4.6665 13.9998H11.3332C12.8059 13.9998 13.9998 12.8059 13.9998 11.3332V4.6665C13.9998 3.19374 12.8059 1.99984 11.3332 1.99984H4.6665Z"
+                                        fill="#292F36" />
+                                </g>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_610_2517">
+                                    <rect width="16" height="16" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </div>
+                    <div class="p-2 bg-[#98FAEC] rounded-[48px]">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g id="discord">
+                                <path id="Vector"
+                                    d="M6.32812 2.45312L5.9375 2.5C5.9375 2.5 4.18555 2.69141 2.90625 3.71875H2.89062L2.875 3.73438C2.58789 3.99805 2.46289 4.32227 2.26562 4.79688C2.06836 5.27148 1.85742 5.87695 1.67188 6.54688C1.30078 7.88867 1 9.51367 1 11V11.125L1.0625 11.25C1.52539 12.0625 2.34766 12.5801 3.10938 12.9375C3.87109 13.2949 4.5293 13.4844 4.98438 13.5L5.28125 13.5156L5.4375 13.25L5.98438 12.2812C6.56445 12.4121 7.23242 12.5 8 12.5C8.76758 12.5 9.43555 12.4121 10.0156 12.2812L10.5625 13.25L10.7188 13.5156L11.0156 13.5C11.4707 13.4844 12.1289 13.2949 12.8906 12.9375C13.6523 12.5801 14.4746 12.0625 14.9375 11.25L15 11.125V11C15 9.51367 14.6992 7.88867 14.3281 6.54688C14.1426 5.87695 13.9316 5.27148 13.7344 4.79688C13.5371 4.32227 13.4121 3.99805 13.125 3.73438L13.1094 3.71875H13.0938C11.8145 2.69141 10.0625 2.5 10.0625 2.5L9.67188 2.45312L9.53125 2.8125C9.53125 2.8125 9.38672 3.17773 9.29688 3.59375C8.73047 3.51758 8.26758 3.5 8 3.5C7.73242 3.5 7.26953 3.51758 6.70312 3.59375C6.61328 3.17773 6.46875 2.8125 6.46875 2.8125L6.32812 2.45312ZM5.64062 3.59375C5.66211 3.66406 5.68359 3.72461 5.70312 3.78125C5.05664 3.94141 4.36719 4.18555 3.73438 4.57812L4.26562 5.42188C5.5625 4.61719 7.42578 4.5 8 4.5C8.57422 4.5 10.4375 4.61719 11.7344 5.42188L12.2656 4.57812C11.6328 4.18555 10.9434 3.94141 10.2969 3.78125C10.3164 3.72461 10.3379 3.66406 10.3594 3.59375C10.8262 3.6875 11.7168 3.90234 12.4531 4.48438C12.4492 4.48633 12.6406 4.77539 12.8125 5.1875C12.9883 5.61133 13.1836 6.17578 13.3594 6.8125C13.6973 8.0332 13.9629 9.51953 13.9844 10.8281C13.6699 11.3086 13.0859 11.7422 12.4688 12.0312C11.9297 12.2832 11.5039 12.375 11.25 12.4219L11 12C11.1484 11.9453 11.2949 11.8848 11.4219 11.8281C12.1914 11.4902 12.6094 11.125 12.6094 11.125L11.9531 10.375C11.9531 10.375 11.6719 10.6328 11.0156 10.9219C10.3594 11.2109 9.35742 11.5 8 11.5C6.64258 11.5 5.64062 11.2109 4.98438 10.9219C4.32812 10.6328 4.04688 10.375 4.04688 10.375L3.39062 11.125C3.39062 11.125 3.80859 11.4902 4.57812 11.8281C4.70508 11.8848 4.85156 11.9453 5 12L4.75 12.4219C4.49609 12.375 4.07031 12.2832 3.53125 12.0312C2.91406 11.7422 2.33008 11.3086 2.01562 10.8281C2.03711 9.51953 2.30273 8.0332 2.64062 6.8125C2.81641 6.17578 3.01172 5.61133 3.1875 5.1875C3.35938 4.77539 3.55078 4.48633 3.54688 4.48438C4.2832 3.90234 5.17383 3.6875 5.64062 3.59375ZM6.25 7C5.86328 7 5.52148 7.2207 5.3125 7.5C5.10352 7.7793 5 8.12305 5 8.5C5 8.87695 5.10352 9.2207 5.3125 9.5C5.52148 9.7793 5.86328 10 6.25 10C6.63672 10 6.97852 9.7793 7.1875 9.5C7.39648 9.2207 7.5 8.87695 7.5 8.5C7.5 8.12305 7.39648 7.7793 7.1875 7.5C6.97852 7.2207 6.63672 7 6.25 7ZM9.75 7C9.36328 7 9.02148 7.2207 8.8125 7.5C8.60352 7.7793 8.5 8.12305 8.5 8.5C8.5 8.87695 8.60352 9.2207 8.8125 9.5C9.02148 9.7793 9.36328 10 9.75 10C10.1367 10 10.4785 9.7793 10.6875 9.5C10.8965 9.2207 11 8.87695 11 8.5C11 8.12305 10.8965 7.7793 10.6875 7.5C10.4785 7.2207 10.1367 7 9.75 7ZM6.25 8C6.27734 8 6.3125 8.00977 6.375 8.09375C6.4375 8.17773 6.5 8.32422 6.5 8.5C6.5 8.67578 6.4375 8.82227 6.375 8.90625C6.3125 8.99023 6.27734 9 6.25 9C6.22266 9 6.1875 8.99023 6.125 8.90625C6.0625 8.82227 6 8.67578 6 8.5C6 8.32422 6.0625 8.17773 6.125 8.09375C6.1875 8.00977 6.22266 8 6.25 8ZM9.75 8C9.77734 8 9.8125 8.00977 9.875 8.09375C9.9375 8.17773 10 8.32422 10 8.5C10 8.67578 9.9375 8.82227 9.875 8.90625C9.8125 8.99023 9.77734 9 9.75 9C9.72266 9 9.6875 8.99023 9.625 8.90625C9.5625 8.82227 9.5 8.67578 9.5 8.5C9.5 8.32422 9.5625 8.17773 9.625 8.09375C9.6875 8.00977 9.72266 8 9.75 8Z"
+                                    fill="#292F36" />
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="p-2 bg-[#98FAEC] rounded-[48px]">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g id="github">
+                                <path id="Vector"
+                                    d="M8.00018 1.49756C6.41717 1.49762 4.88582 2.06097 3.68016 3.08679C2.47449 4.11261 1.67318 5.53397 1.4196 7.09655C1.16602 8.65912 1.47673 10.2609 2.29611 11.6154C3.1155 12.9698 4.39011 13.9885 5.89186 14.4892C6.22519 14.5476 6.35019 14.3476 6.35019 14.1726C6.35019 14.0142 6.34185 13.4892 6.34185 12.9309C4.66685 13.2392 4.23351 12.5226 4.10018 12.1476C3.95223 11.7829 3.7177 11.4597 3.41685 11.2059C3.18351 11.0809 2.85018 10.7726 3.40851 10.7642C3.6217 10.7874 3.82617 10.8616 4.0046 10.9805C4.18303 11.0995 4.33016 11.2597 4.43351 11.4476C4.52469 11.6114 4.6473 11.7555 4.79431 11.8719C4.94131 11.9882 5.10983 12.0744 5.2902 12.1255C5.47057 12.1766 5.65926 12.1916 5.84543 12.1696C6.03161 12.1477 6.21163 12.0892 6.37517 11.9976C6.40403 11.6586 6.55507 11.3418 6.80018 11.1059C5.31685 10.9392 3.76685 10.3642 3.76685 7.81424C3.75748 7.15168 4.00197 6.51063 4.45018 6.02258C4.24637 5.44672 4.27022 4.81477 4.51685 4.25591C4.51685 4.25591 5.07516 4.0809 6.35018 4.93924C7.44104 4.63923 8.59266 4.63923 9.68351 4.93924C10.9585 4.07258 11.5168 4.25591 11.5168 4.25591C11.7635 4.81476 11.7874 5.44673 11.5835 6.02258C12.0331 6.50979 12.2778 7.1514 12.2668 7.81424C12.2668 10.3726 10.7085 10.9392 9.22518 11.1059C9.38428 11.2672 9.50682 11.4608 9.58446 11.6736C9.66211 11.8864 9.69305 12.1134 9.67518 12.3392C9.67518 13.2309 9.66684 13.9476 9.66684 14.1726C9.66684 14.3476 9.79184 14.5559 10.1252 14.4892C11.6243 13.9845 12.8952 12.9634 13.7111 11.6083C14.527 10.2531 14.8348 8.65211 14.5794 7.09105C14.3241 5.52999 13.5223 4.11047 12.3172 3.0859C11.112 2.06133 9.58199 1.49838 8.00018 1.49756Z"
+                                    fill="#292F36" />
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+                <div class="flex items-center justify-center">© 2023 SinanTokmak. All
+                    rights reserved.</div>
+                <div class="flex flex-wrap items-center justify-between gap-8">
+                    <div class="">Privacy
+                        Policy</div>
+                    <div class="">Terms &
+                        Conditions</div>
+                </div>
+                <div class="inline-flex justify-between ">
+                    <div class="text-center ">Design By
+                    </div>
+                    <div class="text-[#12F7D6] ml-1">JohannLeon</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
